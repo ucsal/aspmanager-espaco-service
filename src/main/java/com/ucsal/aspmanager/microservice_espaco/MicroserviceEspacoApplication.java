@@ -13,7 +13,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 		description = "Microserviço de Gestão e Solicitação de Espaços Físicos"),
  	servers = {
         @Server(url = "http://localhost:8084", description = "Ambiente Local (Desenvolvimento)"),
-        @Server(url = "http://localhost:8080/espaco", description = "API Gateway (Produção)")
+        @Server(url = "http://localhost:8080/api/v1/orq/espaco", description = "API Gateway (Produção)")
     })
 @EnableDiscoveryClient
 public class MicroserviceEspacoApplication {
